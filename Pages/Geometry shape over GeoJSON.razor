@@ -1,0 +1,26 @@
+﻿@page "/geometry-shape-over-geoJSON"
+
+@using Syncfusion.Blazor.Maps
+
+<div>
+    <SfMaps Background="transparent" Height="700">
+        <MapsAreaSettings Background="transparent" />
+        <MapsCenterPosition Latitude="37.768253245440846" Longitude="-108.65245386980939"></MapsCenterPosition>
+        <MapsZoomSettings Enable="true" ZoomFactor="2" />
+        <MapsLayers>
+            <MapsLayer ShapeData='new {dataOptions = "https://cdn.syncfusion.com/maps/map-data/usa.json"}' TValue="string">
+                <MapsShapeSettings Fill="#E5E5E5">
+                    <MapsShapeBorder Color="#000000" Width="0.2" />
+                </MapsShapeSettings>
+                <MapsDataLabelSettings Visible="true" LabelPath="iso_3166_2" SmartLabelMode="SmartLabelMode.Hide">
+                    <MapsLayerDataLabelTextStyle FontFamily="Segoe UI" Color="#212529"></MapsLayerDataLabelTextStyle>
+                </MapsDataLabelSettings>
+            </MapsLayer>
+            <MapsLayer ShapeData='new {dataOptions ="https://cdn.syncfusion.com/maps/map-data/california.json"}' Type="Syncfusion.Blazor.Maps.Type.SubLayer" TValue="string">
+                <MapsShapeSettings Fill="#8ccdff">
+                    <MapsShapeBorder Color="#1a9cff" Width="0.25" />
+                </MapsShapeSettings>
+            </MapsLayer>
+        </MapsLayers>
+    </SfMaps>
+</div>

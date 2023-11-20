@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33103.201
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Layers", "Layers.csproj", "{C2B5DDE1-F612-46EA-98F0-71B331C52681}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C2B5DDE1-F612-46EA-98F0-71B331C52681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2B5DDE1-F612-46EA-98F0-71B331C52681}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2B5DDE1-F612-46EA-98F0-71B331C52681}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2B5DDE1-F612-46EA-98F0-71B331C52681}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {76EBFA01-F4C3-4DD2-BD15-8BAC47C0DC1D}
+	EndGlobalSection
+EndGlobal

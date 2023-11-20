@@ -1,0 +1,19 @@
+﻿@page "/geometry-shape-over-OSM"
+
+@using Syncfusion.Blazor.Maps
+
+<div>
+    <SfMaps Background="transparent" Height="700">
+        <MapsAreaSettings Background="transparent" />
+        <MapsCenterPosition Latitude="37.435921257933" Longitude="-110.59530280178286"></MapsCenterPosition>
+        <MapsZoomSettings Enable="true" ZoomFactor="6" />
+        <MapsLayers>
+            <MapsLayer UrlTemplate="https://tile.openstreetmap.org/level/tileX/tileY.png" TValue="string"></MapsLayer>
+            <MapsLayer ShapeData='new {dataOptions ="https://cdn.syncfusion.com/maps/map-data/california.json"}' Type="Syncfusion.Blazor.Maps.Type.SubLayer" TValue="string">
+                <MapsShapeSettings Fill="#8ccdff">
+                    <MapsShapeBorder Color="#1a9cff" Width="0.25" />
+                </MapsShapeSettings>
+            </MapsLayer>
+        </MapsLayers>
+    </SfMaps>
+</div>
